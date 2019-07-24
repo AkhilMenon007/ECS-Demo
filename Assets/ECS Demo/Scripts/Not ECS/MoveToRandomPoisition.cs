@@ -29,5 +29,6 @@ public class MoveToRandomPoisition : MonoBehaviour
             time -= Time.deltaTime;
         }
         transform.position = Vector3.MoveTowards(transform.position, movement, Time.deltaTime * speed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(Random.insideUnitSphere * 360f), Time.deltaTime);
     }
 }

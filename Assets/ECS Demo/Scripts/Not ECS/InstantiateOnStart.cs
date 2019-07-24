@@ -23,7 +23,7 @@ public class InstantiateOnStart : MonoBehaviour
     {
         for (int i = 0; i < count; i++)
         {
-            Instantiate(prefab,transform);
+            Instantiate(prefab,transform.position,transform.rotation,transform);
         }
         currentCount += count;
 

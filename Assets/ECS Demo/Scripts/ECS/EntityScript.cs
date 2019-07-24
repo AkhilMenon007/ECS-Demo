@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
 using Unity.Collections;
+using Unity.Transforms;
 public class EntityScript : MonoBehaviour
 {
     public GameObject entityPrefab;
@@ -21,7 +22,8 @@ public class EntityScript : MonoBehaviour
         Entity entity = GameObjectConversionUtility.ConvertGameObjectHierarchy(entityPrefab, World.Active);
         for (int i = 0; i < count; i++)
         {
-            a.Instantiate(entity);
+            Entity e = a.Instantiate(entity);
+            a.SetComponentData(e, new Translation { Value = transform.position });
         }
         currentCount += count;
     }

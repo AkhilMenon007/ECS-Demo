@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 339717082466239377}
   - component: {fileID: 339717082466239378}
   - component: {fileID: 339717082466239379}
+  - component: {fileID: -8844419845380873670}
   m_Layer: 0
   m_Name: ECSCube
   m_TagString: Untagged
@@ -133,5 +134,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed4a4ebf62b384e458de5ace59a7dfe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8844419845380873670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339717082466239389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959fc06b90ce21c448af18df1e8eb25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
