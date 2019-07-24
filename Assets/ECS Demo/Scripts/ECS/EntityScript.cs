@@ -7,6 +7,7 @@ public class EntityScript : MonoBehaviour
 {
     public GameObject entityPrefab;
     public int count = 10;
+    public int currentCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +23,6 @@ public class EntityScript : MonoBehaviour
         {
             a.Instantiate(entity);
         }
+        currentCount += count;
     }
 }

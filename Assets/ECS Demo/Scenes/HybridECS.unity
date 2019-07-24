@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &745269452
 Transform:
   m_ObjectHideFlags: 0
@@ -167,6 +167,7 @@ MonoBehaviour:
   entityPrefab: {fileID: 339717082466239389, guid: fbbb58a0d68c97b49861942172bf22e8,
     type: 3}
   count: 1000
+  currentCount: 0
 --- !u!114 &745269454
 MonoBehaviour:
   m_ObjectHideFlags: 0
