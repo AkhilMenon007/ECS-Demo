@@ -22,7 +22,7 @@ public class RandomRotationSystem : JobComponentSystem
         public void Execute(ref Rotation rotation)
         {
             quaternion randomRot = Unity.Mathematics.quaternion.EulerXYZ(random.NextFloat3() * PI * 2);
-            rotation.Value = slerp(rotation.Value, randomRot, deltaTime);
+            rotation.Value = slerp(rotation.Value, randomRot, deltaTime * 10f);
         }
     }
     

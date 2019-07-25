@@ -15,11 +15,11 @@ public class InstantiateOnStart : MonoBehaviour
     public int currentCount = 0;
     void Awake()
     {
-        Create();
+        //Create(count);
         //10k for simple cube
         //30k for invisible cube
     }
-    public void Create()
+    public void Create(int count)
     {
         for (int i = 0; i < count; i++)
         {

@@ -14,7 +14,7 @@ public class RandomMotionAuthor : MonoBehaviour, IConvertGameObjectToEntity
 
     public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
     {
-        RandomMotionComponent data = new RandomMotionComponent { isMovingRandomly = this.isMovingRandomly, delayBetweenUpdates = this.delayBetweenUpdates, timeToNextUpdate = 0f, spread = this.spread, origin = this.origin };
+        RandomMotionComponent data = new RandomMotionComponent { isMovingRandomly = this.isMovingRandomly, delayBetweenUpdates = this.delayBetweenUpdates, timeToNextUpdate = 0f, spread = this.spread/2f, origin = this.origin };
         dstManager.AddComponentData(entity, data);
         // Call methods on 'dstManager' to create runtime components on 'entity' here. Remember that:
         //
